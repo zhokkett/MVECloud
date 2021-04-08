@@ -5,15 +5,19 @@ namespace MVECloud.Domain.Entities.Platform {
 
     public class User_Group: AuditableEntity {
 
-        public int id {get;set;}
-        public bool is_admin { get; set; }
+        public void User_Group( ) {
+            this.Users_In_Group =  new ICollection<Users_In_Group>();
+        }
 
-        public int user_account_id { get; set; }
-        
-        public User_Account User {get;set;}
+        public int id { get; set; }
 
-        public int group_id { get; set; }
+        public int user_group_type_id { get; set; }
 
-        public Group Group;
+        public string customer_invoice_data { get; set; }
+
+        public User_Group_Type User_Group_Type;
+
+        public ICollection<User_In_Group> Users_In_Group;
+
     }
 }
