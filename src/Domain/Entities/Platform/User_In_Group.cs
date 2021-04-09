@@ -3,6 +3,7 @@ using System;
 namespace MVECloud.Domain.Entities.Platform {
 
     public class User_In_Group: AuditableEntity {
+        
         public int id { get; set; }
 
         public int user_group_id { get; set; }

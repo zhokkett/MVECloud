@@ -7,6 +7,7 @@ namespace MVECloud.Domain.Entities.Platform {
 
         public void Plan ( ) {
             this.Plan_Options =  new ICollection<Plan_Option>();
+            this.Plan_History =  new ICollection<Plan_History>();
         }
 
         public int id { get; set; }
@@ -20,5 +21,7 @@ namespace MVECloud.Domain.Entities.Platform {
         public Software Software { get; set; }
 
         public ICollection<Plan_Option> Plan_Options { get; set; }
+
+        public ICollection<Plan_History> Plan_History { get; set; }
     }
 }
