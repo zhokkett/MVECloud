@@ -12,6 +12,8 @@ namespace MVECloud.Domain.Entities.Restaurant {
 
         public string password {get;set;}
 
+        public string email { get; set; }
+        public int user_type_id  {get;set;}
         public User_Type Type { get; set;}
     }
 }
